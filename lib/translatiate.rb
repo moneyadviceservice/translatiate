@@ -1,4 +1,4 @@
-require "translatiate/version"
+require 'translatiate/version'
 
 module Translatiate
   # Your code goes here...
