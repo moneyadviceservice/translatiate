@@ -1,5 +1,12 @@
 require 'translatiate/version'
+require 'yaml'
 
-module Translatiate
-  # Your code goes here...
+class Translatiate
+  def initialize
+  end
+
+  def load_file(filename)
+    file = File.new(filename, "r")
+    YAML::load(file)
+  end
 end

@@ -3,9 +3,12 @@ RSpec.describe Translatiate do
     expect(Translatiate::VERSION).not_to be nil
   end
 
+
+
   context '#load_file' do
-    it 'loads a yaml file' do
-      expect(false).to eq(true)
+    subject { described_class.new.load_file('./spec/dummy/config/locales/en.yml') }
+    it 'loads yaml file data' do
+      is_expected.to eq({"en"=>{"hello"=>"Hello world"}})
     end
   end
 end
