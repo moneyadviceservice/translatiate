@@ -1,2 +1,6 @@
 en:
   hello: "Hello world"
+  goodbye: 'goodbye world'
+  synonyms:
+    hi: hi world
+    hey: hey world
